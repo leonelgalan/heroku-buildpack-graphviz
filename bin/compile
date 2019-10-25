@@ -5,8 +5,8 @@
 #
 # The installed Graphviz versions for the two supported Heroku stacks are:
 #
-#  * Heroku-18: Graphviz v2.40.1 
-#  * Heroku-16: Graphviz v2.38.0 
+#  * Heroku-18: Graphviz v2.40.1
+#  * Heroku-16: Graphviz v2.38.0
 #
 # Notes:
 #
@@ -42,6 +42,7 @@ case "$STACK" in
   heroku-18)
     graphviz_version="2.40.1"
     packages=(universe/g/graphviz/graphviz_2.40.1-2_amd64.deb
+              universe/g/graphviz/libgvpr2_2.40.1-2_amd64.deb
               universe/g/graphviz/libgvc6_2.40.1-2_amd64.deb
               universe/g/graphviz/libcgraph6_2.40.1-2_amd64.deb
               universe/g/graphviz/libcdt5_2.40.1-2_amd64.deb
